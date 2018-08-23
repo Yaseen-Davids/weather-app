@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #494949;
+  font-weight: lighter;
+}
+
+form {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+form label {
+  color: #0051ff;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+form input {
+  height: 20px;
+  margin-top: 20px;
+  width: 500px;
+  padding: 9px;
+  border: none;
+  border-bottom: 2px solid #494949;
+  outline: none;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  background: transparent;
+}
+
+form button {
+  margin-top: 40px;
+  border: 1px solid #0051ff;
+  color: #0051ff;
+  border-radius: 2px;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  padding: 6px 20px;
+  font-size: 1.1em;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+form button:hover {
+  color: white;
+  background: #0051ff;
+  border-color: #0051ff;
+}
+
+form button .fas {
+  margin-left: 10px;
+}
+
+#result {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#result #success-msg {
+  background: rgba(0, 128, 0, 0.801);
+}
+
+#result #error-msg {
+  background: rgba(153, 0, 0, 0.801);
+}
+
+#result p {
+  padding: 14px 20px;
+  border-radius: 2px;
+  font-size: 1.1em;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

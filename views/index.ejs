@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="container">
+
+      <h1>Weather</h1>
+
+      <center><form id="myForm" action="/" method="POST">
+        <label for="city">City Name:</label><br>
+        <input type="text" id="city" name="city" placeholder="Enter City Name">
+        <br>
+        <button type="submit">Search<i class="fas fa-search"></i></button>
+      </form></center>
+
+      <div id="result">
+        <% if(weather !== null){ %>
+
+          <p id="success-msg"><%= weather %></p>
+
+        <% } %>
+        <% if(error !== null){ %>
+
+          <p id="error-msg"><%= error %></p>
+
+        <% } %>
+      </div>
+
+    </div>
+
+    <script>
+
+      // let weatherBox = document.getElementById("theText");
+      // let weatherResult = document.getElementById('result');
+
+      // if (weatherBox == "" || weatherBox == null){
+      //   weatherResult.style.display = 'none';
+      // }
+      // else{
+      //   weatherResult.style.display = 'block';
+      // }
+
+    </script>
+
+  </body>
+</html>
